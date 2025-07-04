@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Solar System - Three.js</title>
+
+  <!-- Make the page responsive on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page styles -->
+  <style>
+    /* Set black background and remove margin */
+    body {
+      margin: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+      background-color: black;
+    }
+
+    /* Make canvas take full screen */
+    canvas {
+      display: block;
+    }
+
+    /* Font for controls and tooltip */
+    #controls, #tooltip {
+      font-family: sans-serif;
+    }
+
+    /* Style for speed control panel */
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      color: white;
+      border-radius: 8px;
+      z-index: 10;
+    }
+
+    /* Style for tooltip that shows planet names */
+    #tooltip {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: none;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    /* Style for buttons */
+    button {
+      position: absolute;
+      z-index: 10;
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    /* Position for Pause/Resume button */
+    #toggleBtn {
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Position for Theme toggle button */
+    #themeToggle {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    /* Style for main title */
+    #title {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 28px;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #1e90ff;
+      z-index: 20;
+    }
+  </style>
+
+  <!-- Load Three.js and its addons from CDN -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Main heading -->
+  <h1 id="title">Interactive 3D Solar System Explorer</h1>
+
+  <!-- 3D canvas for rendering the scene -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Control panel to adjust planet speeds -->
+  <div id="controls">
+    <h3>Planet Speeds</h3>
+  </div>
+
+  <!-- Tooltip to show planet name on hover -->
+  <div id="tooltip"></div>
+
+  <!-- Button to pause or resume animation -->
+  <button id="toggleBtn">Pause</button>
+
+  <!-- Button to toggle light/dark mode -->
+  <button id="themeToggle">Toggle Theme</button>
+
+  <!-- Load the main JavaScript file -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
