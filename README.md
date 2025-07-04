@@ -22,6 +22,7 @@ orbiting around it, with interactive controls and beautiful visuals — all usin
 ##📁 Folder Contents
 
 /SolarSystem 
+
 ├── index.html # Main HTML file
 
 ├── main.js # All JavaScript code using Three.js 
