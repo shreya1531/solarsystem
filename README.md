@@ -12,8 +12,12 @@ orbiting around it, with interactive controls and beautiful visuals — all usin
 🧭 Tooltip showing planet name on hover
 🔍 Zoom camera on planet click
 📱 Mobile responsive design
-📁 Folder Contents
-/SolarSystem ├── index.html # Main HTML file ├── main.js # All JavaScript code using Three.js ├── README.md # This file
+------
+##📁 Folder Contents
+/SolarSystem 
+├── index.html # Main HTML file
+├── main.js # All JavaScript code using Three.js 
+├── README.md # This file
 -----
 ##🚀 How to Run the Project
 No installation or build tools needed! Just open in browser.
