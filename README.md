@@ -44,6 +44,7 @@ Right-click on index.html → Open with Live Server
 This fixes any issues with JavaScript modules and imports.
 
 ###🌐 option3:live demo
+ https://shreya1531.github.io/solarsystem/
 
 
 -----
