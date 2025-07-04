@@ -1,7 +1,12 @@
 ##🌌 Interactive 3D Solar System
+
 This is a Frontend Developer Assignment to build a 3D simulation of the solar system using Three.js. It features the Sun and all 8 planets
 orbiting around it, with interactive controls and beautiful visuals — all using plain HTML, CSS, and JavaScript (no frameworks).
+
+
 ------
+
+
 ##✅ Features
 ☀️ Sun at the center
 🪐 All 8 planets orbiting the Sun
