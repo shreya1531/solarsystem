@@ -23,7 +23,9 @@ orbiting around it, with interactive controls and beautiful visuals — all usin
 
 /SolarSystem 
 ├── index.html # Main HTML file
+|
 ├── main.js # All JavaScript code using Three.js 
+|
 ├── README.md # This file
 
 -----
@@ -45,7 +47,6 @@ This fixes any issues with JavaScript modules and imports.
 
 ###🌐 option3:live demo
  https://shreya1531.github.io/solarsystem/
-
 
 -----
 
